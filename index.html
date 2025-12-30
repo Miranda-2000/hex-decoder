@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>變頻馬達解碼工具</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h2>變頻馬達馬力解碼</h2>
+
+  <div id="login">
+    <input id="licenseInput" placeholder="輸入授權碼">
+    <button id="loginBtn">進入系統</button>
+  </div>
+
+  <div id="main" style="display:none;">
+    <select id="model"></select><br><br>
+    <input id="hexInput" placeholder="輸入 HEX 代碼">
+    <button id="decodeBtn">解碼</button>
+    <p id="result"></p>
+    <button id="logoutBtn">登出</button>
+  </div>
+
+  <script type="module" src="./ui/loginPage.js"></script>
+  <script type="module" src="./ui/mainPage.js"></script>
+</body>
+</html>
